@@ -1,1 +1,58 @@
 @import 'tailwindcss' source('../app');
+@import "@fontsource-variable/noto-sans-jp";
+@import "@fontsource/jetbrains-mono";
+
+@theme {
+  --color-bg: #fafafa;
+  --color-ink: #1a1a1a;
+  --color-ink-sub: #888888;
+  --color-accent: #ff4500;
+  --color-accent-light: rgba(255, 69, 0, 0.15);
+  --color-border: rgba(0, 0, 0, 0.1);
+  --font-sans: 'Noto Sans JP Variable', sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+}
+
+@layer base {
+  body {
+    @apply bg-bg text-ink font-sans leading-loose tracking-wide antialiased;
+  }
+
+  ::selection {
+    @apply bg-accent-light text-ink;
+  }
+}
+
+@layer utilities {
+  .animate-fadeIn {
+    animation: fadeIn 1s ease forwards;
+  }
+  
+  /* Initial state: forced scaleX(0) */
+  .line-animation {
+    display: block;
+    width: 100%;
+    height: 3px;
+    background-color: var(--color-accent);
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 1.2s cubic-bezier(0.65, 0, 0.35, 1);
+    will-change: transform;
+  }
+  
+  /* Triggered state */
+  .reveal-container.revealed .line-animation {
+    transform: scaleX(1);
+  }
+}

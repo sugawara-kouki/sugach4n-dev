@@ -9,8 +9,12 @@
   },
   "private": true,
   "dependencies": {
+    "@fontsource-variable/noto-sans-jp": "^5.2.10",
+    "@fontsource/jetbrains-mono": "^5.2.8",
+    "fast-xml-parser": "^5.7.3",
     "hono": "^4.12.16",
-    "honox": "0.1.55"
+    "honox": "0.1.55",
+    "motion": "^12.38.0"
   },
   "devDependencies": {
     "@cloudflare/workers-types": "^4.20260420.1",

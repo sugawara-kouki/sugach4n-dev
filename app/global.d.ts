@@ -1,8 +1,7 @@
 import type {} from 'hono'
 
 declare module 'hono' {
-  interface Env {
-    Variables: {}
-    Bindings: {}
+  interface ContextRenderer {
+    (content: string | Promise<string>, props?: { title?: string }): Response | Promise<Response>
   }
 }
