@@ -136,6 +136,7 @@ export default createRoute(async (c) => {
                   meta="2026.05"
                   description="HonoX / Cloudflare Workers。最新技術への挑戦と、技術を純粋に楽しむ実験場。"
                   href="https://github.com/sugawara-kouki/sugach4n-dev"
+                  target="_blank"
                 />
                 <ListItem
                   title="複合型アクティビティ予約システム"
@@ -161,6 +162,7 @@ export default createRoute(async (c) => {
                       title={article.title}
                       meta={article.formattedDate}
                       href={article.link}
+                      target="_blank"
                     />
                   ))
                 ) : (
