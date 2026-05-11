@@ -72,18 +72,18 @@ export default createRoute(async (c) => {
               <div class="mt-4">
                 <TimelineItem
                   title="外資系IT企業"
-                  meta="2026.04 - Present"
+                  meta="2026.05 - Present"
                   description="現在は入社時研修に従事。エンタープライズ領域における設計思想や品質管理、開発プロセスを学んでいます。これまでの経験を活かし、影響力の大きいプロジェクトへの参画に向けて準備を進めています。"
                   isLatest={true}
                 />
                 <TimelineItem
                   title="ソフトウェア受託開発企業"
-                  meta="2024.04 - 2026.03"
+                  meta="2024.06 - 2026.04"
                   description="フルスタックエンジニアとしてプロダクト開発を牽引。TypeScript / Next.js をメインに、複雑なビジネスロジックを持つWebシステムの設計から実装、デプロイまでを一気通貫で担当しました。また、3人ほどのメンバーのリーダーとして、マネジメントも経験しました。"
                 />
                 <TimelineItem
                   title="Web制作・SES企業"
-                  meta="2022.04 - 2024.03"
+                  meta="2022.04 - 2024.05"
                   description="Web制作のコーディングから、C#.NETやPythonを用いたシステム開発まで、多様な現場を経験。現場ごとに異なる課題に柔軟に対応する基礎力と、エンジニアとしての適応力を構築しました。"
                 />
               </div>
