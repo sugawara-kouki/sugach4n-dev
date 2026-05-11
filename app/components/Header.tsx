@@ -1,6 +1,8 @@
 export const Header = () => {
   const navItems = [
     { name: 'About', href: '#about-me' },
+    { name: 'Experience', href: '#experience' },
+    { name: 'Skills', href: '#skills' },
     { name: 'Works', href: '#works' },
     { name: 'Blog', href: '#blog' },
   ]
